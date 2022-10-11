@@ -1,0 +1,131 @@
+
+/* Normalize */
+
+:root {
+    /* Colors */
+    --primary: #120D31;
+    --secondary: #FF5376;
+    --alternative: #302F4D;
+    --text-color: #2B2B2B;
+
+    /* Spacings */
+    --spacing-large: 6rem;
+    --spacing-medium: 2.4rem;
+    --spacing-small: 2rem;
+    --spacing-xsmall: 1rem;
+
+    /* Font-family */
+    --font-principal: 'Barlow', sans-serif;
+    --font-title: 'Roboto Slab', serif;
+
+    /* Font-Sizes */
+    --text-large: 5.2em;
+    --text-medium: 2.2em;
+    --text-base: 1.6em;
+    --text-small: 1.4em;
+}
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+li{
+    list-style: none;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+
+
+/* ---- Main ----*/
+/*section title*/
+#section_h1{
+    height: 50vh;
+    background-image: url("/sources/chemist_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section_h1 h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+
+/* section productos y cards*/
+#section_productos{
+    background-image: url("/sources/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos_sub{
+    text-align: center;      
+    color: #400cce;
+    padding: 4vw;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2vw; 
+}
+.productos-h4{
+    text-align: center;      
+    color: #400cce;
+    padding: 1.5vw;
+    font-size: 1.5vw;    
+}
+.formulario{
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+.input_place{
+    padding: 2px;
+    border-radius: 10px;
+    width: 30vw;
+    border-color: #400cce;
+    
+}
+/*SECTION SUCURSALES*/
+#section_sucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.espacio_carrito{
+    padding: 30%;
+}
+
+/*FOOOTER*/
+.cantidad-num{
+    position: absolute;
+    left: 95%;
+    top: 25%;
+    background-color: #2e3d5e;
+    width: 20px;
+    height: 20px;
+    padding: 8px 5px 5px 5px;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+  }

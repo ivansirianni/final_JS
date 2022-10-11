@@ -1,0 +1,90 @@
+
+[
+    {
+        "id":1,
+        "laboratorio":"Bagó",
+        "producto":"Tafirol",
+        "precio":250,
+        "imagen":"tafirol.jpg"
+    },
+
+    {
+        "id":2,
+        "laboratorio":"Bagó",
+        "producto":"Ibupirac",
+        "precio":450,
+        "imagen":"ibupirac.png"
+    },
+
+    {
+        "id":3,
+        "laboratorio":"Bayer",
+        "producto":"Bayaspirina",
+        "precio":455,
+        "imagen":"bayaspirina.jpg"
+    },
+
+    {
+        "id":4,
+        "laboratorio":"Roemmers",
+        "producto":"Amoxidal",
+        "precio":950,
+        "imagen":"amoxi.png"
+    },
+
+    {
+        "id":5,
+        "laboratorio":"Cassara",
+        "producto":"Betacort Plus",
+        "precio":700,
+        "imagen":"betacor.jpg"
+    },
+
+    {
+        "id":6,
+        "laboratorio":"Ciccarelli",
+        "producto":"Agua Oxigenada",
+        "precio":150,
+        "imagen":"agua.png"
+    },
+
+    {
+        "id":7,
+        "laboratorio":"Ciccarelli",
+        "producto":"Gazas",
+        "precio":280,
+        "imagen":"gazas.jpg"
+    },
+
+    {
+        "id":8,
+        "laboratorio":"Medigen",
+        "producto":"Salbutamol",
+        "precio":550,
+        "imagen":"salbutam.jpg"
+    },
+
+    {
+        "id":9,
+        "laboratorio":"Porta",
+        "producto":"Bi Alcohol 500ml",
+        "precio":700,
+        "imagen":"alcoho.jpg"
+    },
+
+    {
+        "id":10,
+        "laboratorio":"Bayer",
+        "producto":"Merthiolate",
+        "precio":400,
+        "imagen":"merthi.jpg"
+    },
+
+    {
+        "id":11,
+        "laboratorio":"Elea",
+        "producto":"Alernix Rapida Acción",
+        "precio":325,
+        "imagen":"alernix.png"
+    }
+]

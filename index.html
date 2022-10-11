@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto JS</title>
+    
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--fontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9b10810d6c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+       
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="#destacados">DESTACADOS</a>
+          <a class="navbar-brand text-primary" href="#section_sucursales">SUCURSALES</a>
+          <a class="navbar-brand text-primary" href="#destacados">CONTACTO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>    
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav me-auto">
+                 <form class="d-flex">
+                  <input id="buscador"class="form-control me-2" placeholder="Ingrese un producto" aria-label="Search">
+                  <button id="btnBuscar" class="btn btn-outline-primary">Buscar</button>
+              </form> 
+              
+            </ul>
+            <ul className="navbar-nav me-auto">  
+              <li className="nav-item " >
+                  <a id="boton_carrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+              </li>
+            </ul>
+           
+          </div>          
+      </nav>
+    </header>
+    <main>
+        <!--Section para titulo-->
+        <section id="section_h1">
+            <h1 id="main_h1">Laboratorio & Farmacia</h1> <!--se modificará por dom-->
+        </section>
+           
+        <!--Catalogo y sus funciones--> 
+        <section id="section_productos">
+            <!--Productos destacados-->
+            <h3 id="destacados" class="productos_sub">PRODUCTOS DESTACADOS</h3>
+            <div>        
+                <button id="ver_catalogo" class="btn btn-outline-primary">CONSULTE PRODUCTOS DESTACADOS</button> 
+                <button id="ocultar_catalogo" class="btn btn-outline-primary">OCULTAR PRODUCTOS</button>            
+            </div>
+            <div id="productos_destacados" class="card_container">
+              <div id="loader"></div>
+            </div>
+        </section>
+        
+        <!--Section de sucursales-->
+        <section id="section_sucursales">
+            <h3 class="productos_sub">Conozca nuestras Sucursales</h3>
+            <div>
+                <button id="ver_sucu" class="btn btn-outline-primary">VER SUCURSALES CERCANAS</button>                
+                <button id="ocultar_sucu" class="btn btn-outline-primary">OCULTAR SUCURSALES</button>
+          </div>
+          <div id="sucursales" class="card_container"></div>
+        </section>
+
+        <!--Modal Carrito-->
+    <section>  
+      <div class="cantidad-cursos"></div> 
+      <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">      
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+              
+            </div>
+            <div class="row ml-ato">
+              <p id="total"></p>
+            </div>
+            <div class="modal-footer">
+              
+              
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button id="btn_vaciar" class= "btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+              <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="btn_compra">Finalizar Compra</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contacto">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button text-bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              CONTACTANOS
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <form id="form">
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Ejemplo: Tito">                  
+                </div>                
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deje un comentario"></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" id="btnSubmit" type="submit">Enviar Comentario</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <section id="comentarios">
+      <div id="comments"></div>
+    </section>
+        <!--Scripts-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script><!--Toastify-->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--sweet alert-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> <!--Bootstrap--> 
+        <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script> <!--LUXON--> 
+        <script src="./js/api.js"></script>   <!--Script de la hoja de objeto js--> 
+        <script src="./js/project.js"></script> <!--Hoja de proyecto-->
+  </main>
+        
+    <footer class="footer_container">
+      <h4 class="footer_h4">Contactanos</h4>
+
+    </footer>
+    
+</body>
+</html>
